@@ -1,0 +1,19 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.contenedorMain {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    height: 200px;
+}
+
+.caja {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    color: aliceblue;
+}
+
