@@ -17,3 +17,19 @@ body {
     color: aliceblue;
 }
 
+.navbar {
+    position: relative;
+    z-index: 9999 !important;
+}
+
+.carousel {
+    position: relative;
+    z-index: 1 !important;
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 10000 !important;
+}
+
+
