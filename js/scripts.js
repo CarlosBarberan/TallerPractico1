@@ -23,7 +23,7 @@ document.querySelectorAll('.btn').forEach(button => {
       opacity: [0, 1],
       duration: 1000,
       easing: 'easeOutExpo',
-      delay: anime.stagger(200) // Retrasa la animación de cada elemento
+      delay: anime.stagger(200)
     });
   });
   
