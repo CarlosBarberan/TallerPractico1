@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Cliente - Cortinas y Persianas</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <div class="caja">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">A|S</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="persianas.html">Persianas</a></li>
+                                <li><a class="dropdown-item" href="tradicional.html">Cortinaje Tradicional</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="servicios.html">Servicios</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar Producto"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container mt-5">
+        <h2>Registro de Cliente</h2>
+        <p>Regístrate para recibir ofertas y promociones especiales en cortinas y persianas.</p>
+        <form id="registroForm" novalidate>
+            <div class="form-group">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre completo" required>
+                <div class="invalid-feedback">Por favor, ingresa tu nombre completo.</div>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico" required>
+                <div class="invalid-feedback">Por favor, ingresa un correo válido.</div>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Número de Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu número de teléfono" required>
+                <div class="invalid-feedback">Por favor, ingresa un número de teléfono válido.</div>
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección</label>
+                <input type="text" class="form-control" id="direccion" placeholder="Ingresa tu dirección" required>
+                <div class="invalid-feedback">Por favor, ingresa tu dirección.</div>
+            </div>
+            <div class="form-group">
+                <label for="preferencias">Preferencias de Cortinas/Persianas</label>
+                <select class="form-control" id="preferencias" required>
+                    <option value="" disabled selected>Selecciona tu preferencia</option>
+                    <option value="cortinas">Cortinas</option>
+                    <option value="persianas">Persianas</option>
+                    <option value="ambas">Ambas</option>
+                </select>
+                <div class="invalid-feedback">Por favor, selecciona una preferencia.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="formulario.js"></script>
+</body>
+</html>
